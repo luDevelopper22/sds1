@@ -1,6 +1,7 @@
 package com.devsuperior.dspesquisa.dto;
 
 import java.io.Serializable;
+
 import java.time.Instant;
 
 import com.devsuperior.dspesquisa.entities.Record;
@@ -23,6 +24,7 @@ public class RecordDTO implements Serializable {
     public RecordDTO(Record entity) {
     	id = entity.getId();
     	moment = entity.getMoment();
+    	name = entity.getName();
     	age = entity.getAge();
     	gameTitle = entity.getGame().getTitle();
     	gamePlatform = entity.getGame().getPlatform();
